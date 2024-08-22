@@ -1,0 +1,141 @@
+/* * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+} */
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+:root {
+     /* colors */
+     --primary-color: #3C3D37;
+     --secondary-color: #697565;
+     --background-color: #1a1a18;
+     /* --background-color: linear-gradient(to bottom, #151e0e 0%,#414a3a 67%); */
+     --text-color: #ffffff;
+     --intense-color: #677D6A;
+     --light-color: #ECDFCC;
+
+      /* font sizes */
+    --root-font-size: 1.1rem;
+    font-size: var(--root-font-size);
+}
+
+body {
+    background: var(--background-color);
+    color: var(--text-color);
+    font-family: sans-serif;
+    overflow:hidden
+  }
+
+main {
+    width: 60%;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  img, h1 {
+    margin-bottom: 30px;
+  }
+
+  .palindrome-description {
+    width: min(100vw, 450px);
+    min-height: 140px;
+    padding: 20px;
+    margin-bottom: 30px;
+    text-align: justify;
+    background: var(--secondary-color);
+    border-radius: 20px;
+    line-height: 1.2;
+  }
+
+  .palindrome-container {
+    width: min(100vw, 450px);
+    min-height: 140px;
+    padding: 30px;
+    text-align: justify;
+    background: var(--light-color);
+    border-radius: 20px;
+    line-height: 1.2;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  #text-input {
+    width: 250px;
+    height: 30px;
+    border-radius: 1px;
+    font-family: sans-serif;
+    position: relative;
+    border: none;
+    border-bottom: 2px solid var(--background-color);
+    background: var(--light-color);
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  input:focus {
+    border: none; 
+    outline: none; 
+}
+
+  #check-btn {
+    cursor: pointer;
+    color: white;
+    background-color: var(--background-color);
+    background-image: linear-gradient(#151e0e 0%,#414a3a 67%);
+    border: 3px solid var(--primary-color);
+    border-radius: 5px;
+    padding: 5px auto;
+    width: 90px;
+    margin-left: 30px;
+    height: 30px;
+  }
+
+  #check-btn:hover {
+    background-image: linear-gradient(#374138, #849280);
+  }
+
+  .result-div {
+    overflow-y: auto;
+    word-wrap: break-word;
+    min-height: 50px;
+    color: var(--background-color);
+    display: inline;
+    font-size: 1.5rem;
+}
+
+footer {
+    font-size: x-small;
+    text-align: center;
+    color: var(--light-color);
+}
+
+footer p {
+    opacity: 0.4;
+  }
+
+
+@media (max-width: 600px) {
+    body {
+        overflow: auto;
+    }
+    h1 {
+      text-align: center;
+    }
+    #check-btn {
+      margin: 0 auto;
+      margin-top: 10px;
+    }
+}
