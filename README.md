@@ -2,7 +2,7 @@
 
 ## Overview
 
-The **Palindrome Checker** is a simple web-based application that checks whether a given string is a palindrome or not. A palindrome is a word, phrase, number, or sequence of characters that reads the same forward and backward (ignoring spaces, punctuation, and case differences). This project includes functionality to handle both alphanumeric palindromes and user inputs that include special characters, spaces, or mixed cases.
+The **Palindrome Checker** is a simple web-based application that checks whether a given string is a palindrome or not. A palindrome is a word, phrase, number, or sequence of characters that reads the same forward and backward (ignoring spaces, punctuation, and case differences). This project includes functionality to handle both alphanumeric palindromes and user inputs that include special characters, spaces or mixed cases.
 
 ## Features
 
